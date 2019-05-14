@@ -8,5 +8,9 @@ HTTPS://GITHUB.COM/GLITCHYBOI/JCRP-REWRITE
 --]]
 
 -------------- CHAT EVENTS/FUNCTIONS --------------
-
+RegisterServerEvent("JCRP:LogToDiscord")
+AddEventHandler('JCRP:LogToDiscord', function(logType)
+    
+    
+end)
 ----------------------- END -----------------------
