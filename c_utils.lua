@@ -1,6 +1,6 @@
 --[[
 ---------------------------------------------------
-ADMIN COMMANDS (S_ADMIN.LUA) by GlitchyBoi
+CLIENT UTILS (C_UTILS.LUA) by GlitchyBoi
 Made for Justice Community Roleplay
 ---------------------------------------------------
 HTTPS://GITHUB.COM/GLITCHYBOI/JCRP-REWRITE
