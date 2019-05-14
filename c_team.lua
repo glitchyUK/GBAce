@@ -10,7 +10,7 @@ HTTPS://GITHUB.COM/GLITCHYBOI/JCRP-REWRITE
 playerTeam = "tm_civilian"
 
 ------------------- TEAM EVENTS -------------------
-RegisterClientEvent("JCRP:SetTeam")
+RegisterNetEvent("JCRP:SetTeam")
 AddEventHandler('JCRP:SetTeam', function(plTeam)
     playerTeam = plTeam
 
