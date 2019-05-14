@@ -19,5 +19,5 @@ TriggerNetEvent("JCRP:SetTeam", playerID, team) -- Set's Player Team
 ```
 
 #### To Do
-- [] Add Banning
-- [] Fix Client Events
+- [ ] Add Banning
+- [ ] Fix Client Events
