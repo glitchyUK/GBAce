@@ -7,12 +7,32 @@ HTTPS://GITHUB.COM/GLITCHYBOI/JCRP-REWRITE
 ---------------------------------------------------
 --]]
 
+--------------- PLAYER GROUP EVENTS ---------------
+
+RegisterServerEvent("JCRP:LoadPlayer")
+AddEventHandler('JCRP:LoadPlayer', function(player)
+    if tonumber(source) then
+            local s = source
+    elseif tonumber(player) then
+            local s = player
+    end
+        
+    TriggerEvent('JCRP:SetAuth', s)
+    TriggerEvent('JCRP:SetDonator', s)
+    TriggerEvent('JCRP:SetDonator2', s)
+
+end)
+
 RegisterServerEvent("JCRP:SetAuth")
-AddEventHandler('JCRP:SetAuth', function()
-    local s = source;
+AddEventHandler('JCRP:SetAuth', function(player)
+    if tonumber(source) then
+            local s = source
+    elseif tonumber(player) then
+            local s = player
+    end
 
     if IsPlayerAceAllowed(s, "JC.DEVELOPER") then
-        TriggerClientEvent("JCRP:SetUserGroup", s, "DEVELOPER")
+        TriggerClientEvent("JCRP:setPlayerGroup", s, "DEVELOPER")
     elseif IsPlayerAceAllowed(s, "JC.DIRECTOR") then
         TriggerClientEvent("JCRP:SetPlayerGroup", s, "DIRECTOR")
     elseif IsPlayerAceAllowed(s, "JC.LADMIN") then
@@ -30,35 +50,44 @@ AddEventHandler('JCRP:SetAuth', function()
 end)
 
 RegisterServerEvent("JCRP:SetDonator")
-AddEventHandler('JCRP:SetDonator', function()
-    local s = source;
+AddEventHandler('JCRP:SetDonator', function(player)
+    if tonumber(source) then
+            local s = source
+    elseif tonumber(player) then
+            local s = player
+    end
 
     if IsPlayerAceAllowed(s, "JC.VIP3") then
-        TriggerClientEvent("JCRP:SetUserGroup", s, "VIP3")
+        TriggerClientEvent("JCRP:setPlayerDonatorGroup", s, "VIP3")
     elseif IsPlayerAceAllowed(s, "JC.VIP2") then
-        TriggerClientEvent("JCRP:SetPlayerGroup", s, "VIP2")
+        TriggerClientEvent("JCRP:setPlayerDonatorGroup", s, "VIP2")
     elseif IsPlayerAceAllowed(s, "JC.VIP1") then
-        TriggerClientEvent("JCRP:SetPlayerGroup", s, "VIP1")
+        TriggerClientEvent("JCRP:setPlayerDonatorGroup", s, "VIP1")
     else
-        TriggerClientEvent("JCRP:SetPlayerGroup", s, "NONE")
+        TriggerClientEvent("JCRP:setPlayerDonatorGroup", s, "NONE")
     end
 
 end)
 
 RegisterServerEvent("JCRP:SetDonator2")
-AddEventHandler('JCRP:SetDonator2', function()
-    local s = source;
+AddEventHandler('JCRP:SetDonator2', function(player)
+    if tonumber(source) then
+            local s = source
+    elseif tonumber(player) then
+            local s = player
+    end
 
     if IsPlayerAceAllowed(s, "JC.DLC3") then
-        TriggerClientEvent("JCRP:SetUserGroup", s, "DLC3")
+        TriggerClientEvent("JCRP:setPlayerDonatorGroup2", s, "DLC3")
     end
 
     if IsPlayerAceAllowed(s, "JC.DLC2") then
-        TriggerClientEvent("JCRP:SetPlayerGroup", s, "DLC2")
+        TriggerClientEvent("JCRP:setPlayerDonatorGroup2", s, "DLC2")
     end
 
     if IsPlayerAceAllowed(s, "JC.DLC1") then
-        TriggerClientEvent("JCRP:SetPlayerGroup", s, "DLC1")
+        TriggerClientEvent("JCRP:setPlayerDonatorGroup2", s, "DLC1")
     end
 
 end)
+----------------------- END -----------------------
