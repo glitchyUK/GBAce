@@ -33,6 +33,7 @@ dlc3Active = false;
 
 ----------------------- END -----------------------
 
+--------------- PLAYER GROUP EVENTS ---------------
 RegisterNetEvent("JCRP:setPlayerGroup")
 AddEventHandler("JCRP:setPlayerGroup", function(uGroup)
     usrAuthNum = authLvlRank[uGroup];
@@ -64,3 +65,5 @@ AddEventHandler("JCRP:setPlayerDonatorGroup2", function(type)
     end
 
 end)
+
+----------------------- END -----------------------
