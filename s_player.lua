@@ -8,7 +8,6 @@ HTTPS://GITHUB.COM/GLITCHYBOI/JCRP-REWRITE
 --]]
 
 --------------- PLAYER GROUP EVENTS ---------------
-
 RegisterServerEvent("JCRP:LoadPlayer")
 AddEventHandler('JCRP:LoadPlayer', function(player)
     if tonumber(source) then
@@ -90,4 +89,19 @@ AddEventHandler('JCRP:SetDonator2', function(player)
     end
 
 end)
+
+----------------------- END -----------------------
+
+------------------ PLAYER EVENTS ------------------
+RegisterServerEvent("JCRP:PlayerJoin")
+AddEventHandler('JCRP:PlayerJoin', function(player)
+        TriggerServerEvent("JCRP:LoadPlayer", player)
+        
+end)
+
+AddEventHandler('playerConnecting', function()
+        TriggerServerEvent("JCRP:PlayerJoin")
+        
+end)
+
 ----------------------- END -----------------------
