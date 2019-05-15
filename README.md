@@ -12,9 +12,9 @@ TriggerServerEvent("JCRP:LogToDiscord", logType) -- Logs to Discord
 
 #### Client Events
 ```lua
-TriggerClientEvent("JCRP:SetPlayerGroup", playerID) -- Set's Player Admin Group {DONT MESS WITH THIS}
-TriggerClientEvent("JCRP:SetPlayerDonatorGroup", playerID) -- Set's Player VIP Group {DONT MESS WITH THIS}
-TriggerClientEvent("JCRP:SetPlayerDonatorGroup2", playerID) -- Set's Player VIP Group {DONT MESS WITH THIS}
+TriggerClientEvent("JCRP:SetPlayerGroup", playerID, playerGroup) -- Set's Player Admin Group {DONT MESS WITH THIS}
+TriggerClientEvent("JCRP:SetPlayerDonatorGroup", playerID, playerGroup) -- Set's Player VIP Group {DONT MESS WITH THIS}
+TriggerClientEvent("JCRP:SetPlayerDonatorGroup2", playerID, playerGroup) -- Set's Player VIP Group {DONT MESS WITH THIS}
 TriggerClientEvent("JCRP:SetTeam", playerID, team) -- Set's Player Team
 ```
 
