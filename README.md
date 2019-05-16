@@ -7,7 +7,7 @@ TriggerServerEvent("JCRP:LoadPlayer", player) -- Load's All Player Groups
 TriggerServerEvent("JCRP:SetAuth", player) -- Load's Player Admin Groups
 TriggerServerEvent("JCRP:SetDonator", player) -- Load's Player VIP Groups
 TriggerServerEvent("JCRP:SetDonator2", player) -- Load's Player DLC Groups
-TriggerServerEvent("JCRP:LogToDiscord", logType) -- Logs to Discord
+TriggerServerEvent("JCRP:Log", logType) -- Logs to Discord and Log File
 ```
 
 #### Client Events
