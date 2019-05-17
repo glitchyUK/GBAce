@@ -17,7 +17,7 @@ AddEventHandler('JCRP:SetTeam', function(plTeam)
 end)
 
 RegisterNetEvent("JCRP:GetTeam")
-AddEventHandler('JCRP:GetTeam', function(plTeam)
+AddEventHandler('JCRP:GetTeam', function()
     return playerTeam
 
 end)
