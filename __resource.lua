@@ -10,4 +10,4 @@ server_script 's_admin.lua'
 server_script 's_player.lua'
 
 client_script 'c_team.lua'
-client_script 'c_utils.lua'
+client_script 'c_groups.lua'
