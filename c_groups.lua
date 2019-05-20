@@ -1,6 +1,6 @@
 --[[
 ---------------------------------------------------
-CLIENT UTILS (C_UTILS.LUA) by GlitchyBoi
+CLIENT GROUPS (C_GROUPS.LUA) by GlitchyBoi
 Made for Justice Community Roleplay
 ---------------------------------------------------
 HTTPS://GITHUB.COM/GLITCHYBOI/JCRP-REWRITE
