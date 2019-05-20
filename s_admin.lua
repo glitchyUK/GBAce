@@ -8,14 +8,20 @@ HTTPS://GITHUB.COM/GLITCHYBOI/JCRP-REWRITE
 --]]
 
 ------------ ESSENTIAL ADMIN FUNCTIONS ------------
-IsPlayerAceAllowed(char* playerSrc, char* object)
+
+local cmdRestrictions =
+{
+    ["kick"] = "JC.JADMIN",
+    ["setplauth"] = "JC.LADMIN"
+}
+
 RegisterCommand('kick', function(source, args)
     local s = source;
     local p = tonumber(args[1]);
     local r = table.concat(args, " ", 2);
 
-    if (p and GetPlayerName(player)) then
-        DropPlayer(char* playerSrc, char* reason)
+    if (p and GetPlayerName(p)) then
+        DropPlayer(p, "You have been kicked from Justice Community RP [ " .. r .. " ]")
         -- Message to Admin Here
 
     else
@@ -24,4 +30,11 @@ RegisterCommand('kick', function(source, args)
     end 
 end, true)
 
+RegisterCommand('setplauth', function(source, args)
+    local s = source;
+
+    if IsPlayerAceAllowed(s, cmdRestrictions[setplauth]) then
+
+
+end, true)
 ----------------------- END -----------------------

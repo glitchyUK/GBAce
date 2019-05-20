@@ -8,8 +8,15 @@ HTTPS://GITHUB.COM/GLITCHYBOI/JCRP-REWRITE
 --]]
 
 -------------- CHAT EVENTS/FUNCTIONS --------------
+
 RegisterServerEvent("JCRP:Log")
 AddEventHandler('JCRP:Log', function(logType)
+    
+    
+end)
+
+RegisterServerEvent("JCRP:SendRestrictedMsg")
+AddEventHandler('JCRP:SendRestrictedMsg', function()
     
     
 end)
