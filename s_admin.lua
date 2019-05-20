@@ -28,6 +28,7 @@ RegisterCommand('kick', function(source, args)
         -- Message to User Here
 
     end 
+        
 end, true)
 
 RegisterCommand('setplauth', function(source, args)
@@ -35,6 +36,7 @@ RegisterCommand('setplauth', function(source, args)
 
     if IsPlayerAceAllowed(s, cmdRestrictions[setplauth]) then
 
-
+    end
+        
 end, true)
 ----------------------- END -----------------------
