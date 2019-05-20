@@ -34,21 +34,22 @@ dlc3Active = false;
 ----------------------- END -----------------------
 
 --------------- PLAYER GROUP EVENTS ---------------
-RegisterNetEvent("JCRP:setPlayerGroup")
-AddEventHandler('JCRP:setPlayerGroup', function(uGroup)
+RegisterNetEvent("JCRP:SetPlayerGroup")
+AddEventHandler('JCRP:SetPlayerGroup', function(uGroup)
+    -- ADMIN RANK
     usrAuthNum = authLvlRank[uGroup];
     
 end)
 
-RegisterNetEvent("JCRP:setPlayerDonatorGroup")
-AddEventHandler('JCRP:setPlayerDonatorGroup', function(uGroup)
+RegisterNetEvent("JCRP:SetPlayerDonatorGroup")
+AddEventHandler('JCRP:SetPlayerDonatorGroup', function(uGroup)
     -- VIP RANK
     usrVipNum = authLvlRank[uGroup];
 
 end)
 
-RegisterNetEvent("JCRP:setPlayerDonatorGroup2")
-AddEventHandler('JCRP:setPlayerDonatorGroup2', function(type)
+RegisterNetEvent("JCRP:SetPlayerDonatorGroup2")
+AddEventHandler('JCRP:SetPlayerDonatorGroup2', function(type)
     -- DLC RANK
     local type = type
 
