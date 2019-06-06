@@ -1,5 +1,5 @@
-# Ace Base by GlitchyBoi
-### Created for Justice Community Roleplay
+# GB Ace by GlitchyBoi
+### An Ace Based Framework Made for Justice Community Roleplay
 
 #### Server Events
 ```lua
